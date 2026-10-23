@@ -1,0 +1,26 @@
+[project]
+name = "gemini-live-genai-python-sdk"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Angga", email = "Anggalabola44@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "audioop-lts>=0.2.2",
+    "fastapi>=0.161.1",
+    "google-genai>=2.33.0",
+    "python-dotenv>=1.2.4",
+    "python-multipart>=0.0.32",
+    "twilio>=9.12.0",
+    "uvicorn>=0.54.0",
+    "websockets>=17.3",
+]
+
+[project.scripts]
+gemini-live-genai-python-sdk = "gemini_live_genai_python_sdk:main"
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"
